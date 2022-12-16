@@ -2,13 +2,12 @@ import React from 'react';
 import { useState } from 'react';
 import "./Contador.css";
 
-
 const Contador = () => {
 
     const [contador, setContador] = useState(0);
 
     /**
-     * Si count es mayor o igual a 0 se ira sumando por 1.
+     * Si count es mayor o igual a 0 se ira sumando.
      */
     const incrementarContador = () => {
         if (contador >= 0) {
@@ -17,7 +16,7 @@ const Contador = () => {
     }
 
     /**
-    * Si count es mayor o igual a 1, entonces restara por 1.
+    * Si count es mayor o igual a 1, entonces restara.
     */
     const decrementarContador = () => {
         if (contador >= 1) {
